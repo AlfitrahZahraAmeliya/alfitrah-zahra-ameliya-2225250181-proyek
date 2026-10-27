@@ -49,16 +49,19 @@ alfitrah-zahra-ameliya-2225250181-proyek/
 ```
 
 ## Test Case
-Skenario pengujian mencakup:
-- Pembuatan soal PLSV.
-- Pemeriksaan jawaban benar dan salah.
-- Perhitungan nilai sempurna.
-- Perhitungan nilai sebagian.
-- Perhitungan nilai ketika jumlah soal nol.
-- Validasi jumlah soal yang tidak valid.
-- Validasi jawaban yang bukan bilangan bulat.
 
-Hasil aktual dan status pengujian dicatat dalam `tests/test_case.md`.
+| No. | Pengujian | Hasil yang Diharapkan | Hasil Aktual | Status |
+|---|---|---|---|---|
+| 1 | Membuat soal PLSV | Program menghasilkan 5 soal secara acak | Berhasil menghasilkan 5 soal | Berhasil |
+| 2 | Memeriksa jawaban benar | Jawaban dinyatakan benar | `True` | Berhasil |
+| 3 | Memeriksa jawaban salah | Jawaban dinyatakan salah | `False` | Berhasil |
+| 4 | Menghitung nilai sempurna | Nilai 100 | Nilai 100 | Berhasil |
+| 5 | Menghitung nilai sebagian | Nilai 60 | Nilai 60 | Berhasil |
+| 6 | Menghitung nilai tanpa soal | Nilai 0 | Nilai 0 | Berhasil |
+| 7 | Validasi jumlah soal | Input tidak valid ditolak | Sesuai harapan | Berhasil |
+| 8 | Validasi jawaban | Input bukan bilangan bulat ditolak | Sesuai harapan | Berhasil |
+
+Skenario pengujian dicatat dalam file `tests/test_case.md`.
 
 ## Known Issues
 - Soal dibuat secara acak sehingga soal yang muncul dapat berbeda setiap program dijalankan.
